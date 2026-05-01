@@ -21,7 +21,7 @@ import { generateHondurasAudio } from './services/geminiService';
 import { base64ToUint8Array, createWavBlob } from './lib/audioUtils';
 
 export default function App() {
-  const [text, setText] = useState('pegue su texto aquí');
+  const [text, setText] = useState('');
   const [speed, setSpeed] = useState(5); // 1 to 10
   const [isGenerating, setIsGenerating] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
